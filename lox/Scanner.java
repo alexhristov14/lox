@@ -95,7 +95,7 @@ class Scanner {
         String text = this.source.substring(start, current);
         TokenType type = this.keywords.get(text);
 
-        if (type == null) type = TokenType.IDENTIFIER;
+        if (type == null) type = TokenType.IDENTIFIER; // Not reserved -> variable
         addToken(type);
     }
 

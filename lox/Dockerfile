@@ -6,4 +6,4 @@ COPY . /app
 
 RUN javac *.java
 
-CMD [ "java", "Lox" ]
+CMD [ "java", "AstPrinter" ]
